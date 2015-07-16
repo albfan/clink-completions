@@ -785,4 +785,10 @@ local git_parser = parser(
     "--namespace="
 )
 
+--      get alias, find first word and add autocompletion of standard command if matches any
+--      local firstword = command:match("(.-)%s.+$")
+--      if firstword ~= nil and git_parser.firstword ~= nil then
+--         --alias = alias..git_parser.firstword
+--         print(git_parser.firstword)
+--      end
 clink.arg.register_parser("git", git_parser)
